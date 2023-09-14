@@ -16,23 +16,29 @@ function scrollTo(element) {
     })
 }
 
-var b_proj = document.querySelector('.b-proj');
-var proj = document.querySelector('#proj');
+var b_proj = $('.b-proj');
+var proj = document.querySelector("#proj")
 
-var b_home = document.querySelector('.b-home');
-var home = document.querySelector('#home');
+var b_home = $('.b-home');
+var home = document.querySelector("#home")
 
-var b_contact = document.querySelector('.b-contact');
-var contact = document.querySelector('#contact');
+var b_contact = $('.b-contact');
+var contact = document.querySelector("#contact")
 
-b_proj.addEventListener('click', () => {
+$('.b-proj').click(function () {
     scrollTo(proj);
 })
 
-b_home.addEventListener('click', () => {
+$('.b-home').click(function () {
     scrollTo(home);
 })
 
-b_contact.addEventListener('click', () => {
+$('.b-contact').click(function () {
     scrollTo(contact);
 })
+
+// $(window).on("scroll", function () {
+//     if ($(window).scrollTop() > 150) {
+//         console.log($(window).scrollTop())
+//     }
+// });
